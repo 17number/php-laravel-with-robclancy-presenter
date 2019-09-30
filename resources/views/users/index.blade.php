@@ -9,7 +9,7 @@
 <body>
     <ul>
     @forelse ($users as $user)
-        <li><?php echo $user->id . ": " . $user->name; ?></li>
+        <li><?php echo $user->idWithName(); ?></li>
     @empty
         <li>empty</li>
     @endforelse
